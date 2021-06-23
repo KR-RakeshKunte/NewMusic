@@ -1,0 +1,79 @@
+body {
+    background-image: url("music wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#play-pause {
+    position:fixed;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    bottom: 15%;
+    left: 50%;
+    border-radius: 10px;
+}
+#speaker{
+    position:fixed;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    bottom: 15%;
+    left: 40%;
+    border-radius: 10px;
+}
+#forward{
+    position:fixed;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    bottom: 15%;
+    left:60%;
+    border-radius: 10px;
+
+}
+
+/* style for the progress bar */
+#progress-bar {
+    
+    appearance: none;
+    position: absolute;
+    
+    height: 200px;
+    background-color:white;
+    width: 900pt;
+    bottom: 60%;
+    left: 10%;
+}
+
+/* style for the progress bar's slider thumb */
+#progress-bar::-webkit-slider-thumb {
+    
+    margin-top: -3px;
+    margin-left: 0px;
+    height: 10px;
+    width: 7px;
+    border: 0;
+    background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(193, 255, 6));
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: tomato;
+}
+
+/* style for the progress bar's runnable track */
+#progress-bar::-webkit-slider-runnable-track {
+    
+    /*appearance: none;*/
+    cursor: pointer;
+    max-height: 5px;
+    border-radius: 30px;
+    
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+#progress-bar:focus {
+    outline:tomato;
+
+}

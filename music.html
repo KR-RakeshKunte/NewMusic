@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <audio src="Malang - Title Track.mp3" id="song"></audio>
+    <div class="container">
+        <input
+      type="range"
+      id="progress-bar"
+      min="0"
+      max=""
+      value="0"
+      onchange="changeProgressBar()">
+    <div class="box">
+        <img src="speaker.jpg" id="speaker" />
+        <img src="play.png" onclick="playPause()" id="play-pause" />
+        <img src="forward.png" id="forward" />
+    </div>
+    </div>
+</body>
+<script src="music.js"></script>
+</html>
